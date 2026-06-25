@@ -1,0 +1,92 @@
+<svg viewBox="0 0 920 480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="480" fill="#181818" rx="10"/>
+
+  <!-- Header -->
+  <text x="24" y="46" fill="#f2f2f2" font-size="22" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Options &amp; commodities — notebook overview</text>
+  <text x="24" y="68" fill="#777777" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">3 notebooks · learning_about_greeks/</text>
+
+  <!-- CARD 1: GREEKS -->
+  <rect x="20" y="84" width="280" height="370" rx="10" fill="#242424" stroke="#3a3a3a" stroke-width="0.5"/>
+  <rect x="36" y="100" width="56" height="22" rx="4" fill="#18325a"/>
+  <text x="64" y="115" fill="#7ab5f0" font-size="11" font-weight="500" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Greeks</text>
+  <text x="36" y="143" fill="#f0f0f0" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Options Greeks cheat sheet</text>
+  <text x="36" y="180" fill="#606060" font-size="10.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">options_greeks_cheatsheet.ipynb</text>
+  <line x1="36" y1="192" x2="284" y2="192" stroke="#333333" stroke-width="0.5"/>
+  <text x="36" y="210" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="50" y="210" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Delta, Gamma, Theta, Vega, Rho —</text>
+  <text x="50" y="223" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">formulas, ranges, charts</text>
+  <text x="36" y="249" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="50" y="249" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Minor Greeks: Vanna, Vomma,</text>
+  <text x="50" y="262" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Charm, Speed, Color, Zomma</text>
+  <text x="36" y="288" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="50" y="288" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Live Greek calculator (S, K, T, r, σ)</text>
+  <text x="36" y="314" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="50" y="314" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Strategy Greek profiles — 10</text>
+  <text x="50" y="327" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">common strategies</text>
+  <text x="36" y="353" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="50" y="353" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Rules of thumb: long/short</text>
+  <text x="50" y="366" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">premium, put-call parity</text>
+  <line x1="36" y1="386" x2="284" y2="386" stroke="#333333" stroke-width="0.5"/>
+  <text x="36" y="402" fill="#f0f0f0" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Key output: Greeks summary table</text>
+  <text x="36" y="417" fill="#f0f0f0" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">+ live BS calculator</text>
+
+  <!-- CARD 2: PRICING -->
+  <rect x="320" y="84" width="280" height="370" rx="10" fill="#242424" stroke="#3a3a3a" stroke-width="0.5"/>
+  <rect x="336" y="100" width="60" height="22" rx="4" fill="#0b3322"/>
+  <text x="366" y="115" fill="#3dbf97" font-size="11" font-weight="500" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Pricing</text>
+  <text x="336" y="143" fill="#f0f0f0" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Black-Scholes for commodity</text>
+  <text x="336" y="160" fill="#f0f0f0" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">markets</text>
+  <text x="336" y="180" fill="#606060" font-size="10.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">black_scholes_commodities.ipynb</text>
+  <line x1="336" y1="192" x2="584" y2="192" stroke="#333333" stroke-width="0.5"/>
+  <text x="336" y="210" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="350" y="210" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">BSM first principles, assumptions,</text>
+  <text x="350" y="223" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">3D price surface</text>
+  <text x="336" y="241" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="350" y="241" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Cost-of-carry: contango vs</text>
+  <text x="350" y="254" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">backwardation forward curves</text>
+  <text x="336" y="272" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="350" y="272" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Black-76 — industry standard for</text>
+  <text x="350" y="285" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">commodity futures options</text>
+  <text x="336" y="303" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="350" y="303" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">IV smiles, seasonal vol (nat gas,</text>
+  <text x="350" y="316" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">corn), convenience yield</text>
+  <text x="336" y="334" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="350" y="334" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Spread options via Margrabe</text>
+  <text x="350" y="347" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">formula (crack, spark, crush)</text>
+  <text x="336" y="365" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="350" y="365" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">BSM limits &amp; Bachelier model</text>
+  <text x="350" y="378" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">(Apr 2020 negative oil)</text>
+  <line x1="336" y1="396" x2="584" y2="396" stroke="#333333" stroke-width="0.5"/>
+  <text x="336" y="412" fill="#f0f0f0" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Key output: Black-76 Greeks calc</text>
+  <text x="336" y="427" fill="#f0f0f0" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">+ Margrabe crack spread pricer</text>
+
+  <!-- CARD 3: TRADING -->
+  <rect x="620" y="84" width="280" height="370" rx="10" fill="#242424" stroke="#3a3a3a" stroke-width="0.5"/>
+  <rect x="636" y="100" width="62" height="22" rx="4" fill="#3a2506"/>
+  <text x="667" y="115" fill="#e0962a" font-size="11" font-weight="500" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Trading</text>
+  <text x="636" y="143" fill="#f0f0f0" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Options trading cheat sheet —</text>
+  <text x="636" y="160" fill="#f0f0f0" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">crude, LNG, coal</text>
+  <text x="636" y="180" fill="#606060" font-size="10.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">options_trading_cheatsheet.ipynb</text>
+  <line x1="636" y1="192" x2="884" y2="192" stroke="#333333" stroke-width="0.5"/>
+  <text x="636" y="210" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="650" y="210" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Vanilla calls/puts: payoffs,</text>
+  <text x="650" y="223" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">moneyness, exercise styles</text>
+  <text x="636" y="241" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="650" y="241" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">15 strategies with payoff diagrams</text>
+  <text x="650" y="254" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">(spreads, condors, straddles…)</text>
+  <text x="636" y="272" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="650" y="272" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Commodity context: WTI, LNG/JKM,</text>
+  <text x="650" y="285" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">API-2 coal — IV ranges, drivers</text>
+  <text x="636" y="303" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="650" y="303" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Interactive strategy selector —</text>
+  <text x="650" y="316" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">score by view, role, budget</text>
+  <text x="636" y="334" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="650" y="334" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Multi-scenario P&amp;L comparison</text>
+  <text x="650" y="347" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">(bull / base / bear)</text>
+  <text x="636" y="365" fill="#555555" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">—</text>
+  <text x="650" y="365" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Decision tree + commodity-specific</text>
+  <text x="650" y="378" fill="#aaaaaa" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">notes per strategy</text>
+  <line x1="636" y1="396" x2="884" y2="396" stroke="#333333" stroke-width="0.5"/>
+  <text x="636" y="412" fill="#f0f0f0" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Key output: ranked strategy recs</text>
+  <text x="636" y="427" fill="#f0f0f0" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">with cost &amp; rationale</text>
+</svg>
