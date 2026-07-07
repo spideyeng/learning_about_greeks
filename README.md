@@ -27,3 +27,19 @@ Practical trading reference covering crude oil, LNG (JKM), and coal (API-2 / New
 - Interactive **strategy selector** — input your market view, role (producer/consumer/trader), and budget to get ranked recommendations with cost and rationale
 - Multi-scenario P&L comparison across bull/base/bear price outcomes
 - Decision tree and commodity-specific notes (OPEC plays, LNG Asian options, coal dark spreads)
+
+### [option_strategy_advisor.ipynb](option_strategy_advisor.ipynb)
+Interactive strategy advisor UI that removes the guesswork from choosing an option structure (crude and LNG). Answer four dropdown questions and get a concrete, priced recommendation:
+
+1. **Commodity** — WTI Crude, Brent Crude, or LNG (JKM), each with default futures price, IV, contract size, and market-specific notes
+2. **Your role** — Producer (long physical), Consumer (short physical), or Speculator
+3. **Price view** — bearish / bullish / range-bound / big move either way
+4. **Premium appetite** — pay premium, zero-cost, or collect premium
+
+A decision matrix maps your answers to a primary strategy plus alternatives from a 14-strategy library (puts, calls, spreads, producer/consumer collars, straddles, strangles, iron condors, outright futures). Each recommendation comes with:
+
+- A full trade card: every leg priced with **Black-76**, net premium per unit and per contract, breakevens, max profit/loss
+- Net Greeks for the whole structure and a shaded payoff-at-expiry diagram
+- Strategy-specific "when to use" and "watch out" warnings (e.g., short-strangle spike risk in LNG, asymmetric collar strikes in high-skew markets)
+
+Use the live `ipywidgets` panel (Section 4) or the plain-code manual runner (Section 5). Section 6 has the full decision matrix and a Crude-vs-LNG practical differences table as static reference. Default market levels are illustrative — update `COMMODITIES` to live quotes before relying on the numbers.
