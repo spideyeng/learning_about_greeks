@@ -72,6 +72,8 @@ streamlit run streamlit_app.py
 # → opens http://localhost:8501
 ```
 
+`python streamlit_app.py` (or the VS Code Run button) works too — the script detects it was launched without the Streamlit runtime and relaunches itself under `streamlit run`.
+
 - Sidebar: commodity, role, price view, premium appetite, tenor — plus live market overrides (futures price, IV %, risk-free rate).
 - Main panel: the recommended strategy and each alternative in their own tabs, each with a full trade card (legs priced with Black-76, net premium per unit and per contract, breakevens, max profit/loss), payoff-at-expiry chart, and net Greeks.
 - The decision-matrix reference tables sit in an expander at the bottom.
@@ -95,3 +97,17 @@ voila option_strategy_advisor_widgets.ipynb
 Same inputs as the Streamlit app; changing the commodity auto-resets futures price and IV to that market's profile, and an **Analyze** dropdown flips the trade card between the primary recommendation and its alternatives.
 
 > Default prices and vols come from `advisor_core.COMMODITIES` and are illustrative — override them in the UI (or edit the dict) with live market levels before relying on the numbers.
+
+### Troubleshooting
+
+**`ModuleNotFoundError: No module named 'numpy'` (or `'streamlit'`)** — you're running the system Python (`/bin/python3`), which has no packages installed. Everything lives in the miniconda **base** env:
+
+```bash
+~/miniconda3/bin/python -m streamlit run streamlit_app.py   # explicit
+python streamlit_app.py                                     # works when (base) is active
+```
+
+**VS Code Run button uses the wrong interpreter** — the workspace default is pinned in `.vscode/settings.json`, but a manually-selected interpreter overrides it. Fix it once:
+
+1. `Ctrl+Shift+P` → **Python: Select Interpreter** → pick **Python (base) `~/miniconda3/bin/python`**
+2. If the change doesn't take effect: `Ctrl+Shift+P` → **Developer: Reload Window**

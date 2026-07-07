@@ -2,12 +2,32 @@
 
 Run locally:
     streamlit run streamlit_app.py
+(or `python streamlit_app.py` — it relaunches itself under streamlit)
 
 All pricing/strategy logic lives in advisor_core.py (shared with the
 ipywidgets notebook version).
 """
 
-import streamlit as st
+import sys
+
+try:
+    import streamlit as st
+except ModuleNotFoundError:
+    sys.exit(
+        f"streamlit is not installed in this interpreter: {sys.executable}\n"
+        "Use the miniconda one instead:\n"
+        "    ~/miniconda3/bin/python -m streamlit run streamlit_app.py\n"
+        "In VS Code: Ctrl+Shift+P -> 'Python: Select Interpreter' -> "
+        "Python (base) ~/miniconda3/bin/python"
+    )
+
+# Launched as a plain script (e.g. VS Code Run button)? Re-exec under streamlit.
+if __name__ == '__main__':
+    from streamlit import runtime
+    if not runtime.exists():
+        from streamlit.web import cli as stcli
+        sys.argv = ['streamlit', 'run', __file__] + sys.argv[1:]
+        sys.exit(stcli.main())
 
 from advisor_core import (
     COMMODITIES, STRATEGIES, ROLES, VIEWS, PREMIUM_APPETITES, TENORS,
