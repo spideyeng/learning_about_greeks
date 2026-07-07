@@ -43,3 +43,55 @@ A decision matrix maps your answers to a primary strategy plus alternatives from
 - Strategy-specific "when to use" and "watch out" warnings (e.g., short-strangle spike risk in LNG, asymmetric collar strikes in high-skew markets)
 
 Use the live `ipywidgets` panel (Section 4) or the plain-code manual runner (Section 5). Section 6 has the full decision matrix and a Crude-vs-LNG practical differences table as static reference. Default market levels are illustrative — update `COMMODITIES` to live quotes before relying on the numbers.
+
+## Strategy advisor as a web app
+
+The advisor also ships as two standalone app front-ends. Both are thin UIs over the same engine module, so they always agree on the numbers:
+
+| File | What it is |
+|---|---|
+| [advisor_core.py](advisor_core.py) | Shared engine (no UI): Black-76 pricing and Greeks, the 3 commodity profiles, the 14-strategy library, the 36-entry decision matrix, and `analyze_strategy()` / `recommend()` / `payoff_figure()` helpers. Import it from your own scripts too. |
+| [streamlit_app.py](streamlit_app.py) | Streamlit web app built on `advisor_core` |
+| [option_strategy_advisor_widgets.ipynb](option_strategy_advisor_widgets.ipynb) | ipywidgets panel built on `advisor_core` — runs in Jupyter, or serves as a web app via Voilà |
+
+### Prerequisites
+
+- **Python 3.10+** (tested on 3.13, miniconda)
+- Packages: `numpy`, `scipy`, `matplotlib` (engine) + `streamlit` (app 1) + `ipywidgets`, `voila` (app 2) — all pinned loosely in [requirements.txt](requirements.txt):
+
+```bash
+pip install -r requirements.txt
+```
+
+Run everything from the repo root — both front-ends import `advisor_core.py` from the working directory.
+
+### Option 1 — Streamlit app
+
+```bash
+streamlit run streamlit_app.py
+# → opens http://localhost:8501
+```
+
+- Sidebar: commodity, role, price view, premium appetite, tenor — plus live market overrides (futures price, IV %, risk-free rate).
+- Main panel: the recommended strategy and each alternative in their own tabs, each with a full trade card (legs priced with Black-76, net premium per unit and per contract, breakevens, max profit/loss), payoff-at-expiry chart, and net Greeks.
+- The decision-matrix reference tables sit in an expander at the bottom.
+
+### Option 2 — ipywidgets panel
+
+**In Jupyter** (interactive notebook):
+
+```bash
+jupyter lab option_strategy_advisor_widgets.ipynb
+# Run all cells, then drive the dropdown panel
+```
+
+**As a web app via Voilà** (code hidden, widgets live):
+
+```bash
+voila option_strategy_advisor_widgets.ipynb
+# → opens http://localhost:8866
+```
+
+Same inputs as the Streamlit app; changing the commodity auto-resets futures price and IV to that market's profile, and an **Analyze** dropdown flips the trade card between the primary recommendation and its alternatives.
+
+> Default prices and vols come from `advisor_core.COMMODITIES` and are illustrative — override them in the UI (or edit the dict) with live market levels before relying on the numbers.
